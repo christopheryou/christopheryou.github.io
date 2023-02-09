@@ -59,6 +59,12 @@
     hsl(35, 100%, 68%)
   );
 
+  --text-gradient-pink: linear-gradient(
+    to right,
+    var(--cute-pink),
+    var(--dark-cute-pink)
+  );
+
   /* solid */
   --main-border: hsl(22, 12%, 68%);
   --jet: hsl(0, 0%, 22%);
@@ -830,7 +836,7 @@ main {
   left: -33px;
   height: 6px;
   width: 6px;
-  background: var(--text-gradient-yellow);
+  background: var(--text-gradient-pink);
   border-radius: 50%;
   box-shadow: 0 0 0 4px var(--main-border);
 }
@@ -874,7 +880,7 @@ main {
 }
 
 .skill-progress-fill {
-  background: var(--text-gradient-yellow);
+  background: var(--text-gradient-pink);
   height: 100%;
   border-radius: inherit;
 }
