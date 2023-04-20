@@ -1,405 +1,415 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christopher You</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
-
-  <!--
+    <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
 
-  <!--
+    <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!--
+    <!--
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Typewriter Effect! -->
-  <link rel="stylesheet" href="https://unpkg.com/@auroratide/typewritten-text/lib/style.css" />
-  <script type="module" src="https://unpkg.com/@auroratide/typewritten-text/lib/define.js"></script>
-</head>
+    <!-- Typewriter Effect! -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@auroratide/typewritten-text/lib/style.css"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/@auroratide/typewritten-text/lib/define.js"
+    ></script>
+  </head>
 
-<body>
-
-  <!--
+  <body>
+    <!--
     - #MAIN
   -->
 
-  <main>
-
-    <!--
+    <main>
+      <!--
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img src="./images/headshot.jpg" alt="Christopher You" width="60" />
+          </figure>
 
-      <div class="sidebar-info">
+          <div class="info-content">
+            <h1 class="name" title="Christopher You">Christopher You</h1>
 
-        <figure class="avatar-box">
-          <img src="./images/headshot.jpg" alt="Christopher You" width="60">
-        </figure>
+            <p class="title">Third Year PhD Student @ UF</p>
+          </div>
 
-        <div class="info-content">
-          <h1 class="name" title="Christopher You">Christopher You</h1>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
 
-          <p class="title">Third Year PhD Student @ UF</p>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
 
-      </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
 
-      <div class="sidebar-info_more">
+                <a href="mailto:christopheryou@ufl.edu" class="contact-link"
+                  >christopheryou@ufl.edu</a
+                >
+              </div>
+            </li>
 
-        <div class="separator"></div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
 
-        <ul class="contacts-list">
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
 
-          <li class="contact-item">
+                <a href="tel:+7633214721" class="contact-link">763-321-4721</a>
+              </div>
+            </li>
 
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
 
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
 
-              <a href="mailto:christopheryou@ufl.edu" class="contact-link">christopheryou@ufl.edu</a>
-            </div>
+                <address>University of Florida, Gainesville, FL USA</address>
+              </div>
+            </li>
+          </ul>
 
-          </li>
+          <div class="separator"></div>
 
-          <li class="contact-item">
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/christopher-you-4a6bb0180"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
 
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
 
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
 
-              <a href="tel:+7633214721" class="contact-link">763-321-4721</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>University of Florida, Gainesville, FL USA</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/christopher-you-4a6bb0180" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
+      <!--
       - #main-content
     -->
 
-    <div class="main-content">
-
-      <!--
+      <div class="main-content">
+        <!--
         - #NAVBAR
       -->
 
-      <nav class="navbar">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
 
-        <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Projects</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Blog</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
+        <!--
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+          <section class="about-text">
+            <p>
+              👋 Hi, there! I'm <b>Christopher</b>, a third year PhD student
+              working on <b>virtual reality</b>, <b>virtual humans</b>, and
+              <b>machine learning</b> to promote health and wellbeing for
+              marginalized populations. I am completing my Human-Centered
+              Computing PhD at the University of Florida with Dr. Benjamin Lok.
+            </p>
 
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-        <section class="about-text">
-          <p>👋 Hi, there! I'm <b>Christopher</b>, a third year PhD student working on <b>virtual reality</b>, <b>virtual humans</b>, and <b>machine learning</b> to promote health and wellbeing for marginalized populations. I am completing my Human-Centered Computing PhD at the University of Florida
-           with Dr. Benjamin Lok.</p>
+            <p>
+              If I'm not working on a paper, grant, or app, (hopefully) you can
+              find me outdoors, traveling, and spending a tad too much money on
+              boba. If not seen in more than 24 hours, please check the UF VERG
+              Lab for a sleeping PhD student at his desk.
+            </p>
 
-          <p>
-            If I'm not working on a paper, grant, or app, (hopefully) you can find me outdoors, traveling, and spending a tad too much money on boba. If not seen in more than 24 hours, please check the UF VERG Lab for a sleeping PhD student at his desk.
-          </p>
+            <p>
+              I'm actively pursuing opportunities in the field of virtual
+              avatars, virtual agents, human computer interaction, machine
+              learning, and AR/VR/XR technologies.
+            </p>
+          </section>
 
-          <p>
-            I'm actively pursuing opportunities in the field of virtual avatars, virtual agents, human computer interaction, machine learning, and AR/VR/XR technologies. 
-          </p>
-        </section>
-
-
-        <!--
+          <!--
           - service
         -->
 
-        <section class="service">
+          <section class="service">
+            <h3 class="h3 service-title">Research Interests</h3>
 
-          <h3 class="h3 service-title">Research Interests</h3>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./images/vr-goggles.png" alt="VR icon" width="40" />
+                </div>
 
-          <ul class="service-list">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Virtual Reality</h4>
 
-            <li class="service-item">
+                  <p class="service-item-text">
+                    VR/AR/XR technologies for immersive, embodying experiences.
+                  </p>
+                </div>
+              </li>
 
-              <div class="service-icon-box">
-                <img src="./images/vr-goggles.png" alt="VR icon" width="40">
-              </div>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img src="./images/ml-icon.png" alt="ML Icon" width="40" />
+                </div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Virtual Reality</h4>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Machine Learning</h4>
 
-                <p class="service-item-text">
-                  VR/AR/XR technologies for immersive, embodying experiences.
-                </p>
-              </div>
+                  <p class="service-item-text">
+                    Applying machine learning to solve challenges in health.
+                  </p>
+                </div>
+              </li>
 
-            </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./images/vh-icon.png"
+                    alt="Virtual human icon"
+                    width="40"
+                  />
+                </div>
 
-            <li class="service-item">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Virtual humans</h4>
 
-              <div class="service-icon-box">
-                <img src="./images/ml-icon.png" alt="ML Icon" width="40">
-              </div>
+                  <p class="service-item-text">
+                    Computer-generated characters to facilitate virtual
+                    experiences.
+                  </p>
+                </div>
+              </li>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Machine Learning</h4>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./images/health-icon.png"
+                    alt="Health icon"
+                    width="40"
+                  />
+                </div>
 
-                <p class="service-item-text">
-                  Applying machine learning to solve challenges in health.
-                </p>
-              </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Healthcare</h4>
 
-            </li>
+                  <p class="service-item-text">
+                    Equipping patients with the ability to control their own
+                    health.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
 
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./images/vh-icon.png" alt="Virtual human icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Virtual humans</h4>
-
-                <p class="service-item-text">
-                  Computer-generated characters to facilitate virtual experiences.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./images/health-icon.png" alt="Health icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Healthcare</h4>
-
-                <p class="service-item-text">
-                  Equipping patients with the ability to control their own health.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
+          <!--
           - testimonials
         -->
 
-        <section class="testimonials">
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Recent News</h3>
 
-          <h3 class="h3 testimonials-title">Recent News</h3>
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./images/passed-exam-icon.png"
+                      alt="Qualifying Exams"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
 
-          <ul class="testimonials-list has-scrollbar">
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Passed Qualifying Examinations
+                  </h4>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./images/passed-exam-icon.png" alt="Qualifying Exams" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Passed Qualifying Examinations</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Manuscript: "The Cultural Tailoring of Virtual Human Interventions: A Systematic Review"
-                  </p>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Manuscript: "The Cultural Tailoring of Virtual Human
+                      Interventions: A Systematic Review"
+                    </p>
+                  </div>
                 </div>
+              </li>
 
-              </div>
-            </li>
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./images/conference-icon.png"
+                      alt="Conference"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Presented Conference Paper at ACM IVA 2022
+                  </h4>
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./images/conference-icon.png" alt="Conference" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Presented Conference Paper at ACM IVA 2022</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Manuscript: "How does a virtual human earn your trust? guidelines to improve willingness to self-disclose to intelligent virtual agents"
-                  </p>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Manuscript: "How does a virtual human earn your trust?
+                      guidelines to improve willingness to self-disclose to
+                      intelligent virtual agents"
+                    </p>
+                  </div>
                 </div>
+              </li>
 
-              </div>
-            </li>
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./images/conference-icon.png"
+                      alt="Conference"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Presented Conference Paper at IEEE ISMAR 2022
+                  </h4>
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./images/conference-icon.png" alt="Conference" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Presented Conference Paper at IEEE ISMAR 2022</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Manuscript: "Strafing Gains: Redirecting Users One Diagonal Step at a Time"
-                  </p>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Manuscript: "Strafing Gains: Redirecting Users One
+                      Diagonal Step at a Time"
+                    </p>
+                  </div>
                 </div>
+              </li>
+            </ul>
+          </section>
 
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
+          <!--
           - testimonials modal
         -->
 
-        <div class="modal-container" data-modal-container>
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
 
-          <div class="overlay" data-overlay></div>
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
 
-          <section class="testimonials-modal">
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img src="" alt="default" width="80" data-modal-img />
+                </figure>
 
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="" alt="default" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Quals Modal</h4>
-
-              <time datetime="2023-01-14">January 2023</time>
-
-              <div data-modal-text>
-                <p>
-                  I successfully wrote and submitted my manuscript: "The Cultural Tailoring of Virtual Human Interventions: A Systematic Review". The link to the article can be found in my CV.
-                </p>
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
               </div>
 
-            </div>
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Quals Modal</h4>
 
-          </section>
+                <time datetime="2023-01-14">January 2023</time>
 
-        </div>
+                <div data-modal-text>
+                  <p>
+                    I successfully wrote and submitted my manuscript: "The
+                    Cultural Tailoring of Virtual Human Interventions: A
+                    Systematic Review". The link to the article can be found in
+                    my CV.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
 
-
-        <!--
+          <!--
           - clients
         
 
@@ -449,146 +459,166 @@
 
         </section>
       -->
+        </article>
 
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
 
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <h3 class="h3">Education</h3>
             </div>
 
-            <h3 class="h3">Education</h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Ph.D. in Human-Centered Computing<i
+                    >, University of Florida</i
+                  >
+                </h4>
 
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Ph.D. in Human-Centered Computing<i>, University of Florida</i></h4>
-
-              <span>Aug 2020 — May 2025</span>
-              <p class="timeline-text">Department of Computer and Information Science Engineering</p>
-              <p class="timeline-text advisor-text">Advisor: Dr. Benjamin Lok</p>
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">M.S. in Computer Science<i>, University of Florida</i></h4>
-              <span>Aug 2020 — Dec 2022</span>
-              <p class="timeline-text">Department of Computer and Information Science Engineering</p>
-              <p class="timeline-text advisor-text">Advisor: Dr. Benjamin Lok</p>
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">B.S. in Computer Science<i>, University of Minnesota-Twin Cities</i></h4>
-
-              <span>Sep 2018 — May 2020</span>
-              <p class="timeline-text">College of Science and Engineering</p>
-              <p class="timeline-text advisor-text">Advisor: Dr. Evan Suma Rosenberg</p>
-            </li>
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Research Assistant<i>, Virtual Experiences Research Group</i></h4>
-
-              <span>Aug 2020 — Present</span>
-
-              <p class="timeline-text">
-                • Primarily investigating the usage of virtual humans and machine learning to improve the enrollment of underrepresented populations in clinical trials (R24 Grant)
-              </p>
-              <p class ="timeline-text">
-                • Developed virtual human platform to help those with psychiatric disorders interact with healthcare providers (Get Prepd Project)
-              </p>
-              <p class ="timeline-text">
-                • Conducting user studies via interviews, surveys, ideation sessions, usability evaluation, statistics, and
-                hypothesis testing especially in fields of user behavior, bias, and culture.
-              </p>
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Research Assistant<i>, Davidson DRiVE Lab</i></h4>
-
-              <span>May 2022 — Aug 2022</span>
-
-              <p class="timeline-text">
-                • Mentored undergraduate students in VR/AR development via Unity in virtual embodiment, flight
-                simulation, and UX/UI design
-           </p>
-              <p class ="timeline-text">
-                • Concurrently developing two applications via Unity for embodiment in VR to study implicit bias and sense
-                of embodiment; publication in development                 </p>
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Software Development Engineer Interventions<i>, Amazon</i></h4>
-
-              <span>May 2020 — Aug 2020</span>
-
-              <p class="timeline-text">
-                • Developed auto-complete feature for Amazon Help Services to be incorporated into services such as Alexa
-                Help Domain and Amazon Customer Service Help Search.
-
-           </p>
-              <p class ="timeline-text">
-                • Utilized a knowledge graph to generate results by natural language processing, synonym mapping, SPARQL,
-                and front-end UI development
-              </p>
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Research Assistant<i>, Illusioneering Lab</i></h4>
-
-              <span>Oct 2018 — May 2020</span>
-
-              <p class="timeline-text">
-                • Created virtual environments in Unity to prototype and study redirected walking techniques in virtual reality. Published poster (2019) and paper (2022).
-           </p>
-              <p class ="timeline-text">
-                • Worked with graduate students to conduct pilot tests for studies, participate in lab meetings, conduct
-                qualitative and quantitative analysis, and assist with human studies in VR.
-
+                <span>Aug 2020 — May 2025</span>
+                <p class="timeline-text">
+                  Department of Computer and Information Science Engineering
                 </p>
-            </li>
+                <p class="timeline-text advisor-text">
+                  Advisor: Dr. Benjamin Lok
+                </p>
+              </li>
 
-          </ol>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  M.S. in Computer Science<i>, University of Florida</i>
+                </h4>
+                <span>Aug 2020 — Dec 2022</span>
+                <p class="timeline-text">
+                  Department of Computer and Information Science Engineering
+                </p>
+                <p class="timeline-text advisor-text">
+                  Advisor: Dr. Benjamin Lok
+                </p>
+              </li>
 
-        </section>
-<!--
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  B.S. in Computer Science<i
+                    >, University of Minnesota-Twin Cities</i
+                  >
+                </h4>
+
+                <span>Sep 2018 — May 2020</span>
+                <p class="timeline-text">College of Science and Engineering</p>
+                <p class="timeline-text advisor-text">
+                  Advisor: Dr. Evan Suma Rosenberg
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Research Assistant<i>, Virtual Experiences Research Group</i>
+                </h4>
+
+                <span>Aug 2020 — Present</span>
+
+                <p class="timeline-text">
+                  • Primarily investigating the usage of virtual humans and
+                  machine learning to improve the enrollment of underrepresented
+                  populations in clinical trials (R24 Grant)
+                </p>
+                <p class="timeline-text">
+                  • Developed virtual human platform to help those with
+                  psychiatric disorders interact with healthcare providers (Get
+                  Prepd Project)
+                </p>
+                <p class="timeline-text">
+                  • Conducting user studies via interviews, surveys, ideation
+                  sessions, usability evaluation, statistics, and hypothesis
+                  testing especially in fields of user behavior, bias, and
+                  culture.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Research Assistant<i>, Davidson DRiVE Lab</i>
+                </h4>
+
+                <span>May 2022 — Aug 2022</span>
+
+                <p class="timeline-text">
+                  • Mentored undergraduate students in VR/AR development via
+                  Unity in virtual embodiment, flight simulation, and UX/UI
+                  design
+                </p>
+                <p class="timeline-text">
+                  • Concurrently developing two applications via Unity for
+                  embodiment in VR to study implicit bias and sense of
+                  embodiment; publication in development
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Software Development Engineer Interventions<i>, Amazon</i>
+                </h4>
+
+                <span>May 2020 — Aug 2020</span>
+
+                <p class="timeline-text">
+                  • Developed auto-complete feature for Amazon Help Services to
+                  be incorporated into services such as Alexa Help Domain and
+                  Amazon Customer Service Help Search.
+                </p>
+                <p class="timeline-text">
+                  • Utilized a knowledge graph to generate results by natural
+                  language processing, synonym mapping, SPARQL, and front-end UI
+                  development
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Research Assistant<i>, Illusioneering Lab</i>
+                </h4>
+
+                <span>Oct 2018 — May 2020</span>
+
+                <p class="timeline-text">
+                  • Created virtual environments in Unity to prototype and study
+                  redirected walking techniques in virtual reality. Published
+                  poster (2019) and paper (2022).
+                </p>
+                <p class="timeline-text">
+                  • Worked with graduate students to conduct pilot tests for
+                  studies, participate in lab meetings, conduct qualitative and
+                  quantitative analysis, and assist with human studies in VR.
+                </p>
+              </li>
+            </ol>
+          </section>
+          <!--
         <section class="skill">
 
           <h3 class="h3 skills-title">My skills</h3>
@@ -651,509 +681,561 @@
 
         </section>
 
-        -->
+        --></article>
 
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+        <article class="portfolio" data-page="projects">
+          <header>
+            <h2 class="h2 article-title">Projects</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Web design</button>
+              <li class="filter-item">
+                <button data-filter-btn>Virtual Humans</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Applications</button>
+              <li class="filter-item">
+                <button data-filter-btn>Virtual Reality</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Web development</button>
+              <li class="filter-item">
+                <button data-filter-btn>Machine Learning</button>
               </li>
-
             </ul>
 
-          </div>
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-select-value>
+                  Select category
+                </div>
 
-          <ul class="project-list">
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                <li class="select-item">
+                  <button data-select-item>Virtual Humans</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Virtual Reality</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Machine Learning</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="virtual humans"
+                data-projects-item
+              >
+                <a href="javascript:void(0)">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./images/r24.png"
+                      alt="r24"
+                      loading="lazy"
+                      data-projects-avatar
+                    />
+                  </figure>
+
+                  <div style="display: none">
+                    <video
+                      src="https://www.youtube.com/embed/YCW4kUPji3M"
+                      data-projects-video
+                    ></video>
+                  </div>
+                  <h3 class="project-title">
+                    Clinical Trial Enrollment Project
+                  </h3>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-projects-title
+                    style="display: none"
+                  >
+                    R24: Clinical Trial Enrollment Project
+                  </h4>
+
+                  <time
+                    style="display: none"
+                    data-projects-date
+                    datetime="2021-05-01"
+                    >May 2021</time
+                  >
+
+                  <p class="project-category">Virtual Humans</p>
+                  <div
+                    class="testimonials-text"
+                    data-projects-text
+                    style="display: none"
+                  >
+                    <p>
+                      This NIH-funded project seeks to use Virtual Human
+                      Technology to increase clinical trial participation among
+                      older adult minorities (Black/African American,
+                      Hispanic/Latin, and/or rural adults over the age of 50).
+                      We designed the virtual human ALEX to be culturally
+                      sensitive, track engagement in NIH-funded trials, and
+                      compare ALEX and standard recruitment methods. Ultimately,
+                      our goal is to create an adaptable virtual human
+                      intervention to increase minority participation rates in
+                      NIH-funded clinical trials. We use virtual characters to
+                      educate users and provide them with decision–making
+                      abilities regarding their health. We will also assist
+                      users in identifying suitable clinical trials to discuss
+                      with their doctors.
+                    </p>
                   </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
+                  <div
+                    class="testimonials-text"
+                    data-projects-technology
+                    style="display: none"
+                  >
+                    <p>
+                      <strong>Technologies</strong>: HTML, JavaScript, CSS,
+                      Unreal Engine, MetaHumans, Machine Learning Models,
+                      Python, ChatGPT
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="virtual humans"
+                data-projects-item
+              >
+                <a href="javascript:void(0)">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <h3 class="project-title">Finance</h3>
+                    <img
+                      src="./images/gpp.PNG"
+                      alt="gpp"
+                      loading="lazy"
+                      data-projects-avatar
+                    />
+                  </figure>
 
-                <p class="project-category">Web development</p>
+                  <div style="display: none">
+                    <video data-projects-video></video>
+                  </div>
+                  <h3 class="project-title">GET PrEPD: Psychiatry</h3>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-projects-title
+                    style="display: none"
+                  >
+                    GET PrEPD: Goal Elicitation, Treatment Prioritzation, &
+                    Electronically Practiced Discussion
+                  </h4>
 
-              </a>
-            </li>
+                  <time
+                    style="display: none"
+                    data-projects-date
+                    datetime="2020-08-01"
+                    >August 2020</time
+                  >
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                  <p class="project-category">Virtual Humans</p>
+                  <div
+                    class="testimonials-text"
+                    data-projects-text
+                    style="display: none"
+                  >
+                    <p>
+                      Get Prepd aims to advocate for the needs of patients who
+                      have severe mental illnesses. It utilizes virtual humans
+                      to help improve decision making and patients'
+                      self-efficacy.
+                    </p>
                   </div>
 
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                  <div
+                    class="testimonials-text"
+                    data-projects-technology
+                    style="display: none"
+                  >
+                    <p>
+                      <strong>Technologies</strong>: Django (server), Inkle
+                      (dialogue management), React front-end, Unity and
+                      Synthesias
+                    </p>
                   </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
+        <!--
+    Projects Modals
+  -->
 
-                <h3 class="project-title">Fundo</h3>
+        <div class="modal-container" data-project-modal-container>
+          <div class="overlay" data-project-overlay></div>
 
-                <p class="project-category">Web design</p>
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-project-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
 
-              </a>
-            </li>
+            <div class="modal-img-wrapper">
+              <!--       REMOVED FIGURE 
+                    <figure class="modal-avatar-box">
+                            <img
+                              src="./images/r24.png"
+                              alt="default"
+                              width="80"
+                              data-project-modal-img
+                            />
+                          </figure>
+            -->
+              <div style="display: block" id="iframe-container">
+                <iframe
+                  id="iframe-video"
+                  width="560"
+                  height="315"
+                  src=""
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                  data-project-modal-vid
+                >
+                  <p id="error-message" style="display: none">
+                    Video unavailable
+                  </p>
+                </iframe>
+              </div>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-project-modal-title>
+                  Template Title.
+                </h4>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                <time
+                  style="text-align: center"
+                  data-projects-modal-date
+                  datetime="2023-01-14"
+                  >Template Date</time
+                >
+              </div>
 
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
+              <div class="modal-content" style="display: block">
+                <div data-project-modal-text style="text-align: justify">
+                  <p>Template Text.</p>
+                </div>
+              </div>
 
-                <h3 class="project-title">Brawlhalla</h3>
+              <br />
+              <div class="modal-content" style="display: block">
+                <div data-projects-modal-technology style="text-align: justify">
+                  <p>Template Technologies.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
 
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #BLOG
       -->
 
-      <article class="blog" data-page="blog">
+        <article class="blog" data-page="blog">
+          <header>
+            <h2 class="h2 article-title">Blog</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-1.jpg"
+                      alt="Design conferences in 2022"
+                      loading="lazy"
+                    />
+                  </figure>
 
-        <section class="blog-posts">
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
 
-          <ul class="blog-posts-list">
+                      <span class="dot"></span>
 
-            <li class="blog-post-item">
-              <a href="#">
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
+                    <h3 class="h3 blog-item-title">
+                      Design conferences in 2022
+                    </h3>
 
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <p class="blog-text">
+                      Veritatis et quasi architecto beatae vitae dicta sunt,
+                      explicabo.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-2.jpg"
+                      alt="Best fonts every designer"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
 
-                </div>
+                      <span class="dot"></span>
 
-              </a>
-            </li>
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
 
-            <li class="blog-post-item">
-              <a href="#">
+                    <h3 class="h3 blog-item-title">
+                      Best fonts every designer
+                    </h3>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <p class="blog-text">
+                      Sed ut perspiciatis, nam libero tempore, cum soluta nobis
+                      est eligendi.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-3.jpg"
+                      alt="Design digest #80"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
 
-                </div>
+                      <span class="dot"></span>
 
-              </a>
-            </li>
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
 
-            <li class="blog-post-item">
-              <a href="#">
+                    <h3 class="h3 blog-item-title">Design digest #80</h3>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <p class="blog-text">
+                      Excepteur sint occaecat cupidatat no proident, quis
+                      nostrum exercitationem ullam corporis suscipit.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-4.jpg"
+                      alt="UI interactions of the week"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
 
-                </div>
+                      <span class="dot"></span>
 
-              </a>
-            </li>
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
 
-            <li class="blog-post-item">
-              <a href="#">
+                    <h3 class="h3 blog-item-title">
+                      UI interactions of the week
+                    </h3>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <p class="blog-text">
+                      Enim ad minim veniam, consectetur adipiscing elit, quis
+                      nostrud exercitation ullamco laboris nisi.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-5.jpg"
+                      alt="The forgotten art of spacing"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
 
-                </div>
+                      <span class="dot"></span>
 
-              </a>
-            </li>
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
 
-            <li class="blog-post-item">
-              <a href="#">
+                    <h3 class="h3 blog-item-title">
+                      The forgotten art of spacing
+                    </h3>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <p class="blog-text">
+                      Maxime placeat, sed do eiusmod tempor incididunt ut labore
+                      et dolore magna aliqua.
+                    </p>
                   </div>
+                </a>
+              </li>
 
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+              <li class="blog-post-item">
+                <a href="#">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-6.jpg"
+                      alt="Design digest #79"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
 
-                </div>
+                      <span class="dot"></span>
 
-              </a>
-            </li>
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
 
-            <li class="blog-post-item">
-              <a href="#">
+                    <h3 class="h3 blog-item-title">Design digest #79</h3>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <p class="blog-text">
+                      Optio cumque nihil impedit uo minus quod maxime placeat,
+                      velit esse cillum.
+                    </p>
                   </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact">
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+                width="400"
+                height="300"
+                loading="lazy"
+              ></iframe>
+            </figure>
+          </section>
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
 
-        <section class="contact-form">
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
 
-          <h3 class="h3 form-title">Contact Form</h3>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
 
-          <form action="#" class="form" data-form>
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
 
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
-    </div>
-
-  </main>
-
-
-
-
-
-
-  <!--
+    <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
-  <!--
+    <!--
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>

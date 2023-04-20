@@ -727,8 +727,8 @@ main {
 
 .modal-content time {
   font-size: var(--fs-6);
-  color: var(--light-gray-70);
-  font-weight: var(--fw-300);
+  color: var(--smoky-black-2);
+  font-weight: var(--fw-600);
   margin-bottom: 10px;
 }
 
