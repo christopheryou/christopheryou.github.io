@@ -61,7 +61,6 @@ for (let i = 0; i < testimonialsItem.length; i++) {
     modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
 
     testimonialsModalFunc();
-    console.log("Found: " + testimonialsItem.length)
   });
 
 }
@@ -72,15 +71,25 @@ for (let i = 0; i < projectsItem.length; i++) {
   projectsItem[i].addEventListener("click", function () {
     // projectModalImg.src = this.querySelector("[data-projects-avatar]").src;
     // projectModalImg.alt = this.querySelector("[data-projects-avatar]").alt;
-    if (this.querySelector("[data-projects-video]").src)
+    projectModalVid.src = "";
+    projectModalVid.style = "";
+    projectModalTitle.innerHTML = "";
+    projectModalText.innerHTML = "";
+    projectModalDate.innerHTML = "";
+    projectModalDate.datetime = "";
+    projectModalTechnology.innerHTML = "";
+
+    if (this.querySelector("[data-projects-video]").src) {
       projectModalVid.src = this.querySelector("[data-projects-video]").src
-    projectModalVid.title = "Video unavailable."
+      projectModalVid.style = "display: block;"
+    }
+    else 
+      projectModalVid.style = "display: none;";
     projectModalTitle.innerHTML = this.querySelector("[data-projects-title]").innerHTML;
     projectModalText.innerHTML = this.querySelector("[data-projects-text]").innerHTML;
-    projectModalDate.innerHTML = document.querySelector("[data-projects-date]").innerHTML;
-    projectModalDate.datetime = document.querySelector("[data-projects-date]").datetime;
-    projectModalTechnology.innerHTML = document.querySelector("[data-projects-technology]").innerHTML;
-
+    projectModalDate.innerHTML = this.querySelector("[data-projects-date]").innerHTML;
+    projectModalDate.datetime = this.querySelector("[data-projects-date]").datetime;
+    projectModalTechnology.innerHTML = this.querySelector("[data-projects-technology]").innerHTML;
 
 
 
