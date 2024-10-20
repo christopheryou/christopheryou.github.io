@@ -10,6 +10,8 @@
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 
+
+
 :root {
   /**
    * colors
@@ -68,13 +70,13 @@
   --eerie-black-1: hsl(240, 2%, 13%);
   --eerie-black-2: hsl(240, 2%, 12%);
   --secondary-bg: hsl(26, 31%, 84%);
-  --main-bg: hsl(22, 31%, 76%);
+  --main-bg: rgb(213, 189, 175);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
   --smoky-black-2: hsl(20, 14%, 4%);
-  --orange-yellow-crayola: hsl(5, 100%, 68%);
+  --orange-yellow-crayola: rgb(255, 105, 92);
   --orange-yellow-crayola-hover: hsl(5, 100%, 75%);
-  --cute-pink: hsl(5, 100%, 81%);
+  --cute-pink: rgb(255, 166, 158);
   --dark-cute-pink: hsl(4.9, 100%, 71%);
   --vegas-gold: hsl(45, 54%, 58%);
   --smoky-black: hsl(23, 32%, 8%);
@@ -82,6 +84,9 @@
   --bittersweet-shimmer: hsl(0, 43%, 51%);
   --linen: hsl(31, 51%, 92%);
   --brown-shadow-2: hsl(22, 8%, 28%);
+  --maya-blue: #6CBEED;
+  --jade: #5DA271;
+
 
   /**
    * typography
@@ -171,8 +176,8 @@ textarea {
 }
 
 ::selection {
-  background: var(--orange-yellow-crayola);
-  color: var(--main-bg);
+  background: var(--bittersweet-shimmer);
+  color: var(--orange-yellow-crayola-hover);
 }
 
 :focus {
@@ -276,7 +281,7 @@ article.active {
 }
 
 .h5 {
-  font-size: var(--fs-7);
+  font-size: var(--fs-5);
   font-weight: var(--fw-500);
 }
 
@@ -2046,4 +2051,129 @@ textarea.form-input::-webkit-resizer {
   .advisor-text {
     font-size: 12px;
   }
+}
+
+.cat-photo-container {
+  float: right;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  position: relative;
+  width: 150px; /* Adjust the width as needed */
+  height: 150px; /* Adjust the height to focus on the cat */
+  overflow: hidden; /* This hides the overflow (the extra parts of the GIF) */
+  background-color: #d4d0c6; /* Background to smooth out any non-transparent areas */
+  border-radius: 10px; /* Keep the rounded corners */
+  padding: 5px; /* Adds some space between the image and the container */
+}
+
+.cat-sleeping {
+  width: 100%;
+  height: auto;
+  transform: translateY(0%); /* Adjust this value to move the GIF up or down and center your cat */
+}
+
+/* Live Boba Cam Label */
+.live-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(255, 0, 0, 0.8);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+
+.live-icon {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 6px;
+  animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.2;
+  }
+}
+
+
+.cat-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: var(--shadow-1);
+  background: var(--bg-gradient-sandy);
+  border: 2px solid var(--main-border);
+  padding: 5px;
+}
+
+
+.cat-sleeping-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10; /* Keeps it above the navbar */
+}
+
+body.loading {
+  cursor: url('../../videos/cat-unscreen.gif'), auto;
+}
+
+
+.manuscript-reference {
+  font-size: 14px;
+  color: #555; /* Slightly lighter color to reduce prominence */
+  margin-top: 5px;
+  line-height: 1.5; /* Ensure good readability */
+}
+
+.maya-blue{
+  color: #6CBEED;
+  background: #6CBEED;
+} 
+
+.jade{
+  color: #5DA271;
+  background: #5DA271;
+} 
+
+.download-container {
+  display: flex;
+  justify-content: center; /* Centers the link horizontally */
+  align-items: center; /* Centers the link vertically (if needed) */
+  margin-top: 20px; /* Optional: Add some space above the button */
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--orange-yellow-crayola);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: var(--orange-yellow-crayola-hover);
+}
+
+.download-btn ion-icon {
+  margin-right: 8px;
+  font-size: 20px;
 }
