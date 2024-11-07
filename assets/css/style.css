@@ -489,7 +489,7 @@ main {
 }
 
 .social-item .social-link {
-  color: var(--light-gray-70);
+  /* color: var(--light-gray-70);*/
   font-size: 18px;
 }
 
