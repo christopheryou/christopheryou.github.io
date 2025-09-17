@@ -2177,3 +2177,13 @@ body.loading {
   margin-right: 8px;
   font-size: 20px;
 }
+
+/* For modal images */
+.testimonials-modal img {
+  max-width: 560px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
