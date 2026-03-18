@@ -373,6 +373,13 @@ main {
   margin-bottom: 10px;
 }
 
+.title-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-content: center;
+}
+
 .info-content .title {
   color: var(--white-1);
   background: var(--onyx);
@@ -2167,6 +2174,7 @@ body.loading {
   /* Centers the link vertically (if needed) */
   margin-top: 20px;
   /* Optional: Add some space above the button */
+  gap: 12px;
 }
 
 .download-btn {
