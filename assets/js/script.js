@@ -227,22 +227,49 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const navigationLinks = document.querySelectorAll("[data-nav-link]");
   const pages = document.querySelectorAll("[data-page]");
 
+  // function to navigate to a page
+  const navigateToPage = function (pageName) {
+    for (let i = 0; i < pages.length; i++) {
+      if (pageName === pages[i].dataset.page) {
+        pages[i].classList.add("active");
+        navigationLinks.forEach(link => {
+          if (link.innerHTML.toLowerCase() === pageName) {
+            link.classList.add("active");
+          } else {
+            link.classList.remove("active");
+          }
+        });
+        window.scrollTo(0, 0);
+      } else {
+        pages[i].classList.remove("active");
+      }
+    }
+  };
+
+  // handle hash changes
+  const handleHashChange = function () {
+    const hash = window.location.hash.slice(2); // remove "/#/" 
+    if (hash) {
+      navigateToPage(hash);
+    } else {
+      // default to "about" if no hash
+      navigateToPage("about");
+      window.location.hash = "#/about";
+    }
+  };
+
   // add event to all nav link
   for (let i = 0; i < navigationLinks.length; i++) {
     navigationLinks[i].addEventListener("click", function () {
-
-      for (let i = 0; i < pages.length; i++) {
-        if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-          pages[i].classList.add("active");
-          navigationLinks[i].classList.add("active");
-          window.scrollTo(0, 0);
-        } else {
-          pages[i].classList.remove("active");
-          navigationLinks[i].classList.remove("active");
-        }
-      }
-
+      const pageName = this.innerHTML.toLowerCase();
+      window.location.hash = "#/" + pageName;
     });
   }
+
+  // listen for hash changes
+  window.addEventListener("hashchange", handleHashChange);
+
+  // handle initial page load
+  handleHashChange();
 });
 
