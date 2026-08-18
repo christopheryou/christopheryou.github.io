@@ -248,13 +248,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   // handle hash changes
   const handleHashChange = function () {
-    const hash = window.location.hash.slice(2); // remove "/#/" 
+    const hash = window.location.hash.slice(2); // remove "/#/"
     if (hash) {
       navigateToPage(hash);
     } else {
-      // default to "about" if no hash
+      // default to "about" if no hash — keep the URL clean, don't force "#/about" into it
       navigateToPage("about");
-      window.location.hash = "#/about";
     }
   };
 
@@ -262,7 +261,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
   for (let i = 0; i < navigationLinks.length; i++) {
     navigationLinks[i].addEventListener("click", function () {
       const pageName = this.innerHTML.toLowerCase();
-      window.location.hash = "#/" + pageName;
+      if (pageName === "about") {
+        // going back "home" clears the hash instead of writing "#/about"
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+        navigateToPage("about");
+      } else {
+        window.location.hash = "#/" + pageName;
+      }
     });
   }
 

@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:buildabeing.com)"
+      "WebFetch(domain:buildabeing.com)",
+      "Bash(\"/c/Program Files/Google/Chrome/Application/chrome.exe\" --headless=new --disable-gpu --hide-scrollbars --window-size=390,1200 --screenshot=/tmp/head-mobile.png --virtual-time-budget=6000 \"file:///C:/Users/chris/Development/christopheryou.github.io/_tmp_head.html\")"
     ]
   }
 }
